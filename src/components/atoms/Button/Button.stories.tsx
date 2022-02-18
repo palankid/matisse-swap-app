@@ -3,7 +3,6 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Button, { AppButtonType } from "./Button";
 import {
-  Grid,
   Table,
   TableBody,
   TableCell,

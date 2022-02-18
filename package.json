@@ -33,6 +33,7 @@
     "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
+    "@svgr/webpack": "^6.2.1",
     "@types/node": "latest",
     "@types/react": "latest",
     "babel-loader": "^8.2.3",

@@ -2,7 +2,8 @@ import * as React from "react";
 import type { NextPage } from "next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Button from "components/Button";
+import Button from "components/atoms/Button";
+import { SwapIcon } from "components/atoms/Icons/Icons";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <Button>
         <span>Hello world</span>
       </Button>
+      <SwapIcon color="primary" />
     </Container>
   );
 };
