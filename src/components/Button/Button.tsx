@@ -2,10 +2,12 @@ import React from "react";
 
 import { Button, ButtonProps } from "@mui/material";
 
-interface AppButtonType extends ButtonProps {}
+export interface AppButtonType extends ButtonProps {
+  children: React.ReactNode;
+}
 
-const AppButton = ({ ...props }: AppButtonType) => {
-  return <Button {...props}>hello worgggld</Button>;
+const AppButton = ({ children, ...props }: AppButtonType) => {
+  return <Button {...props}>{children}</Button>;
 };
 
 export default AppButton;
