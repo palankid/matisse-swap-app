@@ -26,7 +26,6 @@ declare module "@mui/material/Button" {
 const defaultTheme = createTheme();
 
 const theme = createTheme({
-  shadows: Array(shadows.length).fill("none") as Shadows,
   palette: {
     primary: {
       main: colors.COLOR_BLUE,
@@ -86,6 +85,7 @@ const theme = createTheme({
       defaultProps: {
         color: "primary",
         variant: "contained",
+        disableElevation: true,
       },
       styleOverrides: {
         root: {
