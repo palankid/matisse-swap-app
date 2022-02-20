@@ -23,13 +23,27 @@ const Template: ComponentStory<typeof Typography> = (args) => {
       <Typography variant="body2">body2 text</Typography>
       <Typography variant="body1bold">body1 bold text</Typography>
       <Typography variant="body2bold">body2 bold text</Typography>
-      <Typography variant="buttonlarge">button large text</Typography>
-      <Typography variant="buttonmedium">button medium text</Typography>
-      <Typography variant="buttonsmall">button small text</Typography>
-      <Typography variant="caption">caption text</Typography>
-      <Typography variant="inputlabel">input label text</Typography>
-      <Typography variant="helpertext">helper text text</Typography>
-      <Typography variant="inputtext">input text text</Typography>
+      <Typography variant="buttonlarge" sx={{ display: "block" }}>
+        button large text
+      </Typography>
+      <Typography variant="buttonmedium" sx={{ display: "block" }}>
+        button medium text
+      </Typography>
+      <Typography variant="buttonsmall" sx={{ display: "block" }}>
+        button small text
+      </Typography>
+      <Typography variant="caption" sx={{ display: "block" }}>
+        caption text
+      </Typography>
+      <Typography variant="inputlabel" sx={{ display: "block" }}>
+        input label text
+      </Typography>
+      <Typography variant="helpertext" sx={{ display: "block" }}>
+        helper text text
+      </Typography>
+      <Typography variant="inputtext" sx={{ display: "block" }}>
+        input text text
+      </Typography>
     </>
   );
 };

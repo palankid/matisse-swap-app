@@ -1,16 +1,18 @@
 import React from "react";
-import { Button, Container, Grid, IconButton } from "@mui/material";
+import { Container, Grid, IconButton } from "@mui/material";
 import useMediaQuery from "hooks/useMediaQuery";
 import { useDispatch, useSelector } from "react-redux";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded";
 
 import { getConnectedStatus } from "features/store/main.selectors";
 import { headerContainerStyle, buttonStyle } from "./Header.styles";
 import { updateConnectedStatus } from "features/store/main.slice";
 
-import MatisseSvg from "../../assets/logo.svg";
 import { EthereumIcon } from "components/atoms/Icons/Icons";
-import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded";
+import Button from "components/atoms/Button";
+
+import MatisseSvg from "../../assets/logo.svg";
 
 const Header = () => {
   const connectedStatus = useSelector(getConnectedStatus);
