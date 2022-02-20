@@ -1,13 +1,16 @@
 import React from "react";
-import { Button, Container, Grid } from "@mui/material";
+import { Button, Container, Grid, IconButton } from "@mui/material";
 import useMediaQuery from "hooks/useMediaQuery";
 import { useDispatch, useSelector } from "react-redux";
+import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 
 import { getConnectedStatus } from "features/store/main.selectors";
+import { headerContainerStyle, buttonStyle } from "./Header.styles";
+import { updateConnectedStatus } from "features/store/main.slice";
 
 import MatisseSvg from "../../assets/logo.svg";
-import { headerContainerStyle } from "./Header.styles";
-import { updateConnectedStatus } from "features/store/main.slice";
+import { EthereumIcon } from "components/atoms/Icons/Icons";
+import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded";
 
 const Header = () => {
   const connectedStatus = useSelector(getConnectedStatus);
@@ -35,15 +38,25 @@ const Header = () => {
       />
       <Grid>
         {!connectedStatus && (
-          <Button size="large" onClick={handleConnectClick}>
+          <Button size={isSm ? "large" : "medium"} onClick={handleConnectClick}>
             Connect wallet
           </Button>
         )}
         {connectedStatus && (
           <>
-            <Button size="large" onClick={handleDisconnectClick}>
-              Disconnect
+            <Button
+              color="secondary"
+              variant="contained-light"
+              size={isSm ? "large" : "medium"}
+              sx={buttonStyle}
+              startIcon={<EthereumIcon />}
+              endIcon={<RepeatRoundedIcon />}
+            >
+              0x3452...3d27
             </Button>
+            <IconButton size="large" onClick={handleDisconnectClick}>
+              <PowerSettingsNewIcon />
+            </IconButton>
           </>
         )}
       </Grid>

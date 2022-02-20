@@ -4,5 +4,4 @@ export const firstItemStyle = {
 
 export const secondItemStyle = {
   flex: 1,
-  backgroundColor: "gray",
 };

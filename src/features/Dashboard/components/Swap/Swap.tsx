@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 
 import { firstItemStyle, secondItemStyle } from "./Swap.styles";
+import HintDisplay from "components/molecules/HintDisplay";
 
 const Swap = () => {
   return (
@@ -11,39 +12,7 @@ const Swap = () => {
         <Box>sfsdfdsfsdf</Box>
       </Grid>
       <Grid item maxWidth="sm" sx={secondItemStyle}>
-        <Box>
-          fsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf
-          sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff
-          ffffffffff fsdsdfsff fsd sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf
-          dsfsfsdfsd fsdfsdf dsdsfsffsdfsd ffffffffff ffffffffff fsdsdfsff fsd
-          sdf sfsdfd sfsdfsdf sdfsdfsd fsdfsdfsdf dsfsfsdfsd fsdfsdf
-          dsdsfsffsdfsd
-        </Box>
+        <HintDisplay />
       </Grid>
     </>
   );

@@ -7,8 +7,8 @@ const Pool = () => (
   <Grid item>
     {Array(7)
       .fill("")
-      .map(() => (
-        <Box sx={poolItemStyle} />
+      .map((_, idx) => (
+        <Box key={idx} sx={poolItemStyle} />
       ))}
   </Grid>
 );

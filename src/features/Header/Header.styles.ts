@@ -14,3 +14,21 @@ export const headerContainerStyle = (theme: Theme) => ({
     padding: "1rem",
   },
 });
+
+export const buttonStyle = (theme: Theme) => ({
+  [theme.breakpoints.up("sm")]: {
+    marginRight: "2rem",
+    paddingLeft: "2rem",
+    paddingRight: "2rem",
+    fontSize: "1rem",
+    "& > .MuiButton-startIcon": {
+      marginRight: "1rem",
+    },
+    "& > .MuiButton-endIcon": {
+      marginLeft: "1rem",
+    },
+  },
+  [theme.breakpoints.down("sm")]: {
+    marginRight: "0.75rem",
+  },
+});
