@@ -1,3 +1,3 @@
 export interface MainSlice {
-  connected: Boolean;
+  connected: boolean;
 }

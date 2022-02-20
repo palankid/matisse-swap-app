@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 
 import { firstItemStyle, secondItemStyle } from "./Swap.styles";
-import HintDisplay from "components/molecules/HintDisplay";
+import Details from "./Details";
 
 const Swap = () => {
   return (
@@ -12,7 +12,7 @@ const Swap = () => {
         <Box>sfsdfdsfsdf</Box>
       </Grid>
       <Grid item maxWidth="sm" sx={secondItemStyle}>
-        <HintDisplay />
+        <Details />
       </Grid>
     </>
   );

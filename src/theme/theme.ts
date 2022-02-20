@@ -180,12 +180,10 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",
-        marginBottom: "1.5rem",
       },
       [defaultTheme.breakpoints.up("sm")]: {
         fontSize: "1.25rem",
         lineHeight: "160%",
-        marginBottom: "2rem",
       },
     },
     body2: {
@@ -194,12 +192,10 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
-        marginBottom: "1rem",
       },
       [defaultTheme.breakpoints.up("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
-        marginBottom: "1.5rem",
       },
     },
     body1bold: {
@@ -208,12 +204,10 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",
-        marginBottom: "1.5rem",
       },
       [defaultTheme.breakpoints.up("sm")]: {
         fontSize: "1.25rem",
         lineHeight: "160%",
-        marginBottom: "2rem",
       },
     },
     body2bold: {
@@ -222,12 +216,10 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
-        marginBottom: "1rem",
       },
       [defaultTheme.breakpoints.up("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
-        marginBottom: "1.5rem",
       },
     },
     buttonlarge: {
@@ -316,6 +308,20 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Konnect",
+          fontSize: "1.25rem",
+          lineHeight: "2rem",
+          color: colors.COLOR_BLUE,
+          textDecoration: "none",
+          "&:hover": {
+            textDecoration: "underline",
+          },
+        },
+      },
+    },
     MuiIconButton: {
       defaultProps: {
         color: "primary",
