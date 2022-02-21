@@ -2,12 +2,18 @@ import { Theme } from "@mui/material";
 
 export const containerStyle = {
   display: "flex",
+
   width: "100%",
 };
 
-export const selectStyle = {
-  width: "30%",
-};
+export const dropdownStyle = (theme: Theme) => ({
+  [theme.breakpoints.up("sm")]: {
+    width: "30%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "50%",
+  },
+});
 
 export const inputStyle = {
   width: "70%",

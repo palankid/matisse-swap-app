@@ -17,10 +17,12 @@ import {
 import {
   containerStyle,
   inputStyle,
-  selectStyle,
+  dropdownStyle,
   dropdownItemStyle,
 } from "./SwapRow.styles";
 import NumericInput from "components/molecules/NumericInput";
+import Dropdown from "components/atoms/Dropdown";
+import TokenDropdown from "components/molecules/TokenDropdown";
 
 interface SwapRowType {
   sx?: SxProps<Theme>;
@@ -29,26 +31,7 @@ interface SwapRowType {
 const SwapRow = ({ sx }: SwapRowType) => {
   return (
     <Box sx={{ ...containerStyle, ...sx }}>
-      <Select sx={selectStyle}>
-        <MenuItem value={20}>
-          <EthereumIcon />
-          <Typography sx={dropdownItemStyle} variant="buttonmedium">
-            ETH
-          </Typography>
-        </MenuItem>
-        <MenuItem value={20}>
-          <AvalancheIcon />
-          <Typography sx={dropdownItemStyle} variant="buttonmedium">
-            Matic
-          </Typography>
-        </MenuItem>
-        <MenuItem value={20}>
-          <PolygonIcon />
-          <Typography sx={dropdownItemStyle} variant="buttonmedium">
-            AVAX
-          </Typography>
-        </MenuItem>
-      </Select>
+      <TokenDropdown sx={dropdownStyle} value="" />
       <NumericInput
         sx={inputStyle}
         min={0}

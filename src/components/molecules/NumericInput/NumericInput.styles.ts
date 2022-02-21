@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 
 export const upperLabelsStyle = {
   fontWeight: 300,
-  marginBottom: "0.25rem",
+  marginBottom: "0.3rem",
   minHeight: "1.5rem",
 };
 

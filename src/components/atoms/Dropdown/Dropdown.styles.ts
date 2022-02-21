@@ -3,6 +3,7 @@ import colors from "theme/colors";
 
 export const selectStyle = (theme: Theme) => ({
   "&.MuiInputBase-root": {
+    width: "100%",
     borderRadius: 0,
 
     /* Dropdown text, dropdown icon */
@@ -24,6 +25,7 @@ export const selectStyle = (theme: Theme) => ({
       "& > .MuiSelect-select > .MuiTypography-root": {
         fontSize: "1.25rem",
         lineHeight: "2rem",
+        marginLeft: "1rem",
       },
       "& .MuiSelect-icon": {
         marginRight: "1.25rem",
@@ -101,16 +103,12 @@ export const dropdownStyle = (theme: Theme) =>
       boxSizing: "border-box",
       borderRadius: 0,
       border: `1px solid ${colors.COLOR_BLUE}`,
-      borderTop: 0,
 
       "& .MuiList-root": {
         padding: 0,
       },
 
-      "& .MuiTypography-root": {
-        fontSize: "1.125rem",
-      },
-
+      /* Menu items */
       "& .MuiMenuItem-root": {
         "&.Mui-selected": {
           backgroundColor: colors.COLOR_ASH_40,
@@ -122,16 +120,35 @@ export const dropdownStyle = (theme: Theme) =>
       },
 
       [theme.breakpoints.up("sm")]: {
+        minWidth: "15rem !important",
+
         "& .MuiMenuItem-root": {
           padding: "1.25rem 2rem",
+        },
+
+        "& .MuiTypography-root": {
+          fontSize: "1.125rem",
+          marginLeft: "1rem",
         },
       },
 
       [theme.breakpoints.down("sm")]: {
+        minWidth: "12rem !important",
+
         "& .MuiMenuItem-root": {
           fontSize: "1rem",
           padding: "1rem",
         },
+
+        "& .MuiTypography-root": {
+          fontSize: "1.125rem",
+          marginLeft: "0.5rem",
+        },
       },
     },
   } as const);
+
+export const upperLabelsStyle = {
+  marginBottom: "0.3rem",
+  minHeight: "1.5rem",
+};

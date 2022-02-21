@@ -47,21 +47,15 @@ const DropdownTemplate = ({
       </MenuItem>
       <MenuItem value={1}>
         <EthereumIcon />
-        <Typography sx={{ marginLeft: "1rem" }} variant="buttonmedium">
-          ETH
-        </Typography>
+        <Typography variant="buttonmedium">ETH</Typography>
       </MenuItem>
       <MenuItem value={2}>
         <AvalancheIcon />
-        <Typography sx={{ marginLeft: "1rem" }} variant="buttonmedium">
-          Matic
-        </Typography>
+        <Typography variant="buttonmedium">Matic</Typography>
       </MenuItem>
       <MenuItem value={3}>
         <PolygonIcon />
-        <Typography sx={{ marginLeft: "1rem" }} variant="buttonmedium">
-          AVAX
-        </Typography>
+        <Typography variant="buttonmedium">AVAX</Typography>
       </MenuItem>
     </Dropdown>
   );
