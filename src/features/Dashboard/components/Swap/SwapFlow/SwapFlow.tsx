@@ -7,6 +7,7 @@ import {
   swapFlowContainerStyle,
   swapButtonContainerStyle,
   confirmSwapButtonStyle,
+  firstRowStyle,
 } from "./SwapFlow.styles";
 
 const SwapFlow = () => {
@@ -15,7 +16,7 @@ const SwapFlow = () => {
   return (
     <Container sx={swapFlowContainerStyle}>
       <Typography variant="h6">{t("select start swapping")}</Typography>
-      <SwapRow />
+      <SwapRow sx={firstRowStyle} />
       <Grid
         sx={swapButtonContainerStyle}
         container

@@ -1,15 +1,11 @@
 import React from "react";
 import {
   Box,
-  FormControl,
-  InputLabel,
   MenuItem,
   Select,
-  Input,
+  SxProps,
+  Theme,
   Typography,
-  Button,
-  FormHelperText,
-  TextField,
 } from "@mui/material";
 
 import {
@@ -24,10 +20,15 @@ import {
   selectStyle,
   dropdownItemStyle,
 } from "./SwapRow.styles";
+import NumericInput from "components/molecules/NumericInput";
 
-const SwapRow = () => {
+interface SwapRowType {
+  sx?: SxProps<Theme>;
+}
+
+const SwapRow = ({ sx }: SwapRowType) => {
   return (
-    <Box sx={containerStyle}>
+    <Box sx={{ ...containerStyle, ...sx }}>
       <Select sx={selectStyle}>
         <MenuItem value={20}>
           <EthereumIcon />
@@ -48,26 +49,15 @@ const SwapRow = () => {
           </Typography>
         </MenuItem>
       </Select>
-      <FormControl variant="standard" sx={inputStyle}>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <FormHelperText>Huto</FormHelperText>
-          <FormHelperText>Huto222</FormHelperText>
-        </div>
-        <TextField
-          type="number"
-          InputProps={{
-            inputProps: { min: 0, max: 100, step: 0.01 },
-            endAdornment: (
-              <Button variant="contained-light" color="primary">
-                Max
-              </Button>
-            ),
-          }}
-          error={false}
-          sx={{ borderRadius: "0 !important" }}
-          helperText="fsdfdsfsdffsdfs"
-        />
-      </FormControl>
+      <NumericInput
+        sx={inputStyle}
+        min={0}
+        max={100}
+        step={0.01}
+        title="Amount"
+        secondaryTitle="Balance 1 ETH"
+        helperText="Max to use all your funds"
+      />
     </Box>
   );
 };

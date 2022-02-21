@@ -1,15 +1,20 @@
-import { Theme } from "@mui/material";
+import { SxProps, Theme } from "@mui/material";
 
 import colors from "theme/colors";
 
 export const textInputStyle = (theme: Theme) => ({
-  "&.MuiFormControl-root > .MuiInputBase-root": {
+  "& .MuiInputBase-root": {
     borderRadius: 0,
 
     /* Input text */
     "& > .MuiInputBase-input": {
       color: colors.COLOR_DARK_ASH,
       fontWeight: 300,
+
+      "&::-webkit-outer-spin-button, &::-webkit-inner-spin-button": {
+        WebkitAppearance: "none",
+        margin: 0,
+      },
     },
 
     [theme.breakpoints.up("sm")]: {
@@ -36,11 +41,13 @@ export const textInputStyle = (theme: Theme) => ({
     },
 
     /* Hovered border & background */
-    "&:not(.Mui-focused):not(.Mui-error):not(.Mui-disabled):hover .MuiOutlinedInput-notchedOutline":
-      {
+    "&:not(.Mui-focused):not(.Mui-error):not(.Mui-disabled):hover": {
+      backgroundColor: colors.COLOR_ASH_40,
+
+      "& .MuiOutlinedInput-notchedOutline": {
         borderColor: colors.COLOR_ASH,
-        backgroundColor: colors.COLOR_ASH_40,
       },
+    },
 
     /* Focused border & background */
     "&.Mui-focused > .MuiOutlinedInput-notchedOutline": {
@@ -61,10 +68,11 @@ export const textInputStyle = (theme: Theme) => ({
 
     /* Disabled  */
     "&.Mui-disabled": {
+      backgroundColor: colors.COLOR_ASH_20,
+
       "& .MuiInputBase-input": {
-        ["-webkit-text-fill-color"]: "unset",
-        color: colors.COLOR_ASH_40,
-        backgroundColor: colors.COLOR_ASH_20,
+        WebkitTextFillColor: "unset",
+        color: colors.COLOR_ASH,
       },
     },
 

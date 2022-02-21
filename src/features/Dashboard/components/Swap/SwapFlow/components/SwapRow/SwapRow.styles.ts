@@ -2,7 +2,6 @@ import { Theme } from "@mui/material";
 
 export const containerStyle = {
   display: "flex",
-  marginTop: "1.5rem",
   width: "100%",
 };
 

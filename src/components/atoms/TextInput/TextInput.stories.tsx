@@ -24,6 +24,12 @@ const Template: ComponentStory<typeof TextInput> = (args) => {
         disabled
         helperText="Helper text"
       />
+      <TextInput
+        {...args}
+        sx={{ width: "100%" }}
+        value="With custom style"
+        helperText="Helper text"
+      />
     </Grid>
   );
 };

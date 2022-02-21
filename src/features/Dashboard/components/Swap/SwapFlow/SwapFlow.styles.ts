@@ -16,3 +16,7 @@ export const swapButtonContainerStyle = {
 export const confirmSwapButtonStyle = {
   marginTop: "3rem",
 };
+
+export const firstRowStyle = {
+  marginTop: "1.5rem",
+};
