@@ -21,9 +21,11 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@reduxjs/toolkit": "^1.7.2",
+    "i18next": "^21.6.11",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-i18next": "^11.15.4",
     "react-redux": "^7.2.6"
   },
   "devDependencies": {

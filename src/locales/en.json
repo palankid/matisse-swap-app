@@ -1,0 +1,16 @@
+{
+  "allowed slippage": "Allowed Slippage",
+  "connect wallet": "Connect wallet",
+  "connect your wallet": "Connect your wallet",
+  "disconnected text": "To start using the app, your wallet needs to be connected :)",
+  "choose amount text": "Choose the amount you want to swap on your balance. You can check it on the top of the amount field that you want to swap :D",
+  "choose token text": "You can choose any token on the list, if there is some missing you can try adding it by the <strong>contract address.</strong>",
+  "hint": "Hint",
+  "liquidity provider fee": "Liquidity Provider Fee",
+  "minimum received": "Minimum Received",
+  "price impact": "Price Impact",
+  "select start swapping": "Select a token to start swapping",
+  "swap": "Swap",
+  "transaction details": "Transaction details",
+  "transaction details hint": "Output is estimated. you will receive at least <strong>99.95 AVAX</strong> or the transaction will revert."
+}

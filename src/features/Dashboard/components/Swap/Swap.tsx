@@ -1,17 +1,18 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import { Box } from "@mui/system";
 
-import { firstItemStyle, secondItemStyle } from "./Swap.styles";
 import Details from "./Details";
+import SwapFlow from "./SwapFlow";
+
+import { detailsItemStyle, swapItemStyle } from "./Swap.styles";
 
 const Swap = () => {
   return (
     <>
-      <Grid item maxWidth="sm" sx={firstItemStyle}>
-        <Box>sfsdfdsfsdf</Box>
+      <Grid item maxWidth="sm" sx={swapItemStyle}>
+        <SwapFlow />
       </Grid>
-      <Grid item maxWidth="sm" sx={secondItemStyle}>
+      <Grid item maxWidth="sm" sx={detailsItemStyle}>
         <Details />
       </Grid>
     </>

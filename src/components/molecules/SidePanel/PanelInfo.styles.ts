@@ -1,4 +1,5 @@
 import { Theme } from "@mui/material";
+
 import colors from "theme/colors";
 
 export const linkStyle = (theme: Theme) => ({
@@ -9,3 +10,11 @@ export const linkStyle = (theme: Theme) => ({
     marginTop: "1.5rem",
   },
 });
+
+export const textStyle = {
+  textAlign: "center",
+  "& > strong": {
+    fontWeight: "500",
+    color: colors.COLOR_BLACK_ASH,
+  },
+} as const;

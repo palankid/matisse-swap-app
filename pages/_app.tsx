@@ -9,6 +9,8 @@ import theme from "theme/theme";
 import GlobalFonts from "theme/fonts";
 import createEmotionCache from "theme/createEmotionCache";
 
+import "locales/i18n";
+
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 

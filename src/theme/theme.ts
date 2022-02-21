@@ -80,6 +80,7 @@ const theme = createTheme({
     hero: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "6rem",
         lineHeight: "120%",
@@ -92,6 +93,7 @@ const theme = createTheme({
     h1: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "4.5rem",
         lineHeight: "120%",
@@ -104,6 +106,7 @@ const theme = createTheme({
     h2: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "4rem",
         lineHeight: "120%",
@@ -116,6 +119,7 @@ const theme = createTheme({
     h3: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "3rem",
         lineHeight: "140%",
@@ -128,6 +132,7 @@ const theme = createTheme({
     h4: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "2rem",
         lineHeight: "160%",
@@ -140,6 +145,7 @@ const theme = createTheme({
     h5: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.5rem",
         lineHeight: "160%",
@@ -152,6 +158,7 @@ const theme = createTheme({
     h6: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.25rem",
         lineHeight: "160%",
@@ -164,6 +171,7 @@ const theme = createTheme({
     subtitle1: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_BLACK,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",
@@ -177,6 +185,7 @@ const theme = createTheme({
     body1: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",
@@ -189,6 +198,7 @@ const theme = createTheme({
     body2: {
       fontWeight: 400,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
@@ -201,6 +211,7 @@ const theme = createTheme({
     body1bold: {
       fontWeight: 500,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",
@@ -213,6 +224,7 @@ const theme = createTheme({
     body2bold: {
       fontWeight: 500,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1rem",
         lineHeight: "160%",
@@ -259,8 +271,9 @@ const theme = createTheme({
       },
     },
     caption: {
-      fontWeight: 400,
+      fontWeight: 300,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "0.75rem",
         lineHeight: "160%",
@@ -271,8 +284,9 @@ const theme = createTheme({
       },
     },
     inputlabel: {
-      fontWeight: 400,
+      fontWeight: 300,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "0.875rem",
         lineHeight: "160%",
@@ -283,8 +297,9 @@ const theme = createTheme({
       },
     },
     helpertext: {
-      fontWeight: 400,
+      fontWeight: 300,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "0.875rem",
         lineHeight: "160%",
@@ -295,8 +310,9 @@ const theme = createTheme({
       },
     },
     inputtext: {
-      fontWeight: 400,
+      fontWeight: 300,
       fontFamily: "Konnect",
+      color: colors.COLOR_DARK_ASH,
       [defaultTheme.breakpoints.down("sm")]: {
         fontSize: "1.125rem",
         lineHeight: "160%",

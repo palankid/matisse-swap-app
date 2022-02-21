@@ -1,7 +1,7 @@
-export const firstItemStyle = {
+export const swapItemStyle = {
   width: "100%",
 };
 
-export const secondItemStyle = {
+export const detailsItemStyle = {
   flex: 1,
 };

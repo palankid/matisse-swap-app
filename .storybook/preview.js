@@ -2,6 +2,8 @@ import React from "react";
 
 import { ThemeProvider } from "@mui/material/styles";
 
+import "../src/locales/i18n";
+
 import theme from "../src/theme/theme";
 import GlobalFonts from "../src/theme/fonts";
 

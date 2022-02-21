@@ -7,6 +7,7 @@ export const containerStyle = {
   justifyContent: "center",
   flexDirection: "column",
   flex: 1,
+  height: "100%",
   paddingTop: "3rem",
   paddingBottom: "3.75rem",
   backgroundColor: colors.COLOR_ASH_10,
@@ -29,15 +30,5 @@ export const circleStyle = (theme: Theme) => ({
 });
 
 export const titleStyle = {
-  color: colors.COLOR_BLACK,
   marginBottom: "1rem",
 };
-
-export const textStyle = {
-  color: colors.COLOR_DARK_ASH,
-  textAlign: "center",
-  "& > strong": {
-    fontWeight: "500",
-    color: colors.COLOR_BLACK_ASH,
-  },
-} as const;
