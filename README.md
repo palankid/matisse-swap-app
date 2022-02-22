@@ -1,45 +1,36 @@
-# Next.js with TypeScript example
+# Matisse Swap Application Code Challenge
 
-## How to use
+## Justifications
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+- Validation is very basic, I would have approached it with a more complex solution (i.e. Formik with yup library) if the application would have more input fields.
+- I would have included more tests, including component tests with React Testing Library as well as e2e tests with Playwright if the primary aim of the exercise would not just have been to create components and high level component interactions.
+- Exchange rate helper text below the "To" field utilizies a static number
+- I have done the customization of components from 2 main directions, either via modifying the global theme, or by modify a specific component's design through the sx prop.
+- Introducing Redux for state management might look unnecessary, however Redux Toolkit is a very smart solution that does not require any effort to connect it with the application, and it's very easy and straightforward to use. In my opinion Context would require more effort to make it work nearly as simple as Redux.
 
-<!-- #default-branch-switch -->
+## Available Scripts
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs-with-typescript
-cd nextjs-with-typescript
-```
+In the project directory, you can run:
 
-Install it and run:
+### `npm install`
 
-```sh
-npm install
-npm run dev
-```
+Install all required dependencies.
 
-or:
+### `npm run dev`
 
-<!-- #default-branch-switch -->
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/nextjs-with-typescript)
+### `npm run test`
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/nextjs-with-typescript)
+Launches the test runner in the interactive watch mode.
 
-## The idea behind the example
+### `npm run storybook`
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5. If you prefer, you can [use styled-components instead](https://mui.com/guides/interoperability/#styled-components).
+Launches Storybook at [http://localhost:6006](http://localhost:6006).\
+Storybook provides a sandbox to build UIs in isolation so you can develop hard-to-reach states and edge cases.
 
-## The link component
+### `npm run build`
 
-Next.js has [a custom Link component](https://nextjs.org/docs/api-reference/next/link).
-The example folder provides adapters for usage with MUI.
-More information [in the documentation](https://mui.com/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/getting-started/templates/) section.
+Builds the app for production to the `build` folder.\
+It bundles React in production mode and optimizes the build for the best performance.
