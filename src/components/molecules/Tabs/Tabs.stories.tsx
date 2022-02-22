@@ -1,6 +1,9 @@
-import React, { useState, MouseEvent } from "react";
+import React, { useState } from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Grid, Tab, Tabs } from "@mui/material";
+import { Grid } from "@mui/material";
+
+import Tab from "./Tab";
+import Tabs from "./Tabs";
 
 export default {
   title: "components/molecules/Tabs",

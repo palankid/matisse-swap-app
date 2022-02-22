@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { Container, Grid, IconButton, Typography } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 
+import IconButton from "components/atoms/IconButton";
+import Typography from "components/atoms/Typography";
 import {
   changeSelection,
   swapSelection,

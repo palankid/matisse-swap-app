@@ -1,6 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Grid, Link } from "@mui/material";
+import { Grid } from "@mui/material";
+
+import Link from "./Link";
 
 export default {
   title: "components/atoms/Link",

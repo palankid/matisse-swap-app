@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { Container, Grid, Paper, Tab, Tabs } from "@mui/material";
+import { Container, Grid, Paper } from "@mui/material";
 import { Box } from "@mui/system";
+
+import Pool from "./components/Pool";
+import Swap from "./components/Swap";
+import Tabs, { Tab } from "components/molecules/Tabs";
 
 import {
   containerStyle,
@@ -9,8 +13,6 @@ import {
   visibleTabStyle,
   hiddenTabStyle,
 } from "./Dashboard.styles";
-import Pool from "./components/Pool";
-import Swap from "./components/Swap";
 
 const Dashboard = () => {
   const [tabIndex, setTabIndex] = useState(0);

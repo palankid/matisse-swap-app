@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 import i18next from "i18next";
 
 import SidePanel, {
@@ -7,7 +8,6 @@ import SidePanel, {
   TransactionStatus,
 } from "components/molecules/SidePanel";
 import useConnect from "hooks/useConnect";
-import { useSelector } from "react-redux";
 import {
   areAllTokenPropsValid,
   areTokenSelectionsValid,

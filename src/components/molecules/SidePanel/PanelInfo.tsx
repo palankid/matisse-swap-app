@@ -1,6 +1,6 @@
-import { Link } from "@mui/material";
 import { Trans } from "react-i18next";
 
+import Link from "components/atoms/Link";
 import Typography from "components/atoms/Typography";
 
 import { textStyle, linkStyle } from "./PanelInfo.styles";

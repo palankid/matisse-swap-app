@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Container, Typography } from "@mui/material";
-import { Trans } from "react-i18next";
+import { Box, Container } from "@mui/material";
+
+import Typography from "components/atoms/Typography";
 
 import { circleStyle, containerStyle, titleStyle } from "./SidePanel.styles";
 

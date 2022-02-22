@@ -1,9 +1,11 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Grid, IconButton } from "@mui/material";
-
+import { Grid } from "@mui/material";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+
 import { SwapIcon } from "../Icons";
+
+import IconButton from "./IconButton";
 
 export default {
   title: "components/atoms/IconButton",

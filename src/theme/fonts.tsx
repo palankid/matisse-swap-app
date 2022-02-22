@@ -13,10 +13,11 @@ const fontWeights = [
   "Black",
 ];
 
-const fonts = fontWeights.reduce((acc, fontWeight, index) => {
-  return (
-    acc +
-    `
+const fonts = fontWeights.reduce(
+  (acc, fontWeight, index) => {
+    return (
+      acc +
+      `
     @font-face {
       font-family: "Konnect";
       font-style: normal;
@@ -33,8 +34,18 @@ const fonts = fontWeights.reduce((acc, fontWeight, index) => {
       src: url(/fonts/Konnect-${fontWeight}.otf) format("opentype");
     }
   `
-  );
-}, "");
+    );
+  },
+  `
+  @font-face {
+    font-family: "Taviraj";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Taviraj-Regular.ttf) format("truetype");
+  }
+`
+);
 
 const GlobalFonts = () => {
   return (

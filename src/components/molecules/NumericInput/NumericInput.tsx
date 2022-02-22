@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  Button,
   FormControl,
   FormHelperText,
   Grid,
@@ -14,6 +13,7 @@ import TextInput from "components/atoms/TextInput";
 import Typography from "components/atoms/Typography";
 
 import { upperLabelsStyle, inputButtonStyle } from "./NumericInput.styles";
+import Button from "components/atoms/Button";
 
 interface NumericInputType
   extends Omit<OutlinedTextFieldProps, "variant" | "type" | "onChange"> {
