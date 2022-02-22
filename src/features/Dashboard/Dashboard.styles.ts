@@ -17,3 +17,11 @@ export const contentContainerStyle = {
   boxShadow: "0 0.25rem 2rem 0 #0000005A",
   alignItems: "stretch",
 };
+
+export const visibleTabStyle = {
+  display: "flex",
+};
+
+export const hiddenTabStyle = {
+  display: "none",
+};

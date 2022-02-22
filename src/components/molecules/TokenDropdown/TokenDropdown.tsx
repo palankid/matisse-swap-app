@@ -9,6 +9,7 @@ import {
 } from "components/atoms/Icons/Icons";
 import Typography from "components/atoms/Typography";
 import { DropdownType } from "components/atoms/Dropdown/Dropdown";
+import { Tokens } from "types/Tokens.types";
 
 interface TokenDropdownType extends Omit<DropdownType, "children"> {}
 
@@ -18,15 +19,15 @@ const TokenDropdown = ({ ...props }: TokenDropdownType) => {
       <MenuItem disabled value="" sx={{ display: "none" }}>
         Select
       </MenuItem>
-      <MenuItem value="eth">
+      <MenuItem value={Tokens.eth}>
         <EthereumIcon />
         <Typography variant="buttonmedium">ETH</Typography>
       </MenuItem>
-      <MenuItem value="matic">
+      <MenuItem value={Tokens.matic}>
         <AvalancheIcon />
         <Typography variant="buttonmedium">Matic</Typography>
       </MenuItem>
-      <MenuItem value="avax">
+      <MenuItem value={Tokens.avax}>
         <PolygonIcon />
         <Typography variant="buttonmedium">AVAX</Typography>
       </MenuItem>

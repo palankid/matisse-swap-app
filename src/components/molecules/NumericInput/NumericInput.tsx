@@ -16,7 +16,7 @@ import Typography from "components/atoms/Typography";
 import { upperLabelsStyle, inputButtonStyle } from "./NumericInput.styles";
 
 interface NumericInputType
-  extends Omit<OutlinedTextFieldProps, "variant" | "type"> {
+  extends Omit<OutlinedTextFieldProps, "variant" | "type" | "onChange"> {
   value?: number;
   title?: string;
   sx?: SxProps<Theme>;
@@ -25,6 +25,7 @@ interface NumericInputType
   min?: number;
   max?: number;
   step?: number;
+  onChange: (value: number) => void;
 }
 
 const NumericInput = ({
@@ -36,6 +37,7 @@ const NumericInput = ({
   min,
   max,
   step,
+  onChange,
   ...props
 }: NumericInputType) => {
   const [inputValue, setInputValue] = useState(value);
@@ -46,6 +48,15 @@ const NumericInput = ({
 
   const handleMaxClick = () => {
     setInputValue(max);
+    onChange(max as number);
+  };
+
+  const handleChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => {
+    const newValue = +event.target.value;
+    setInputValue(newValue);
+    onChange(newValue);
   };
 
   return (
@@ -81,6 +92,7 @@ const NumericInput = ({
         }}
         value={inputValue}
         disabled={disabled}
+        onChange={handleChange}
         {...props}
       />
     </FormControl>

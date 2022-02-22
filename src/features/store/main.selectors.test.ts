@@ -8,6 +8,24 @@ const mainSlice: MainSlice = {
 
 const store: RootState = {
   main: mainSlice,
+  dashboard: {
+    from: {
+      token: "",
+      value: 0,
+      validation: {
+        token: false,
+        value: false,
+      },
+    },
+    to: {
+      token: "",
+      value: 0,
+      validation: {
+        token: false,
+        value: false,
+      },
+    },
+  },
 };
 
 describe("Main Selectors", () => {

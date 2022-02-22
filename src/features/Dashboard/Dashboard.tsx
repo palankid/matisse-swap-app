@@ -6,6 +6,8 @@ import {
   containerStyle,
   tabContainerStyle,
   contentContainerStyle,
+  visibleTabStyle,
+  hiddenTabStyle,
 } from "./Dashboard.styles";
 import Pool from "./components/Pool";
 import Swap from "./components/Swap";
@@ -26,10 +28,10 @@ const Dashboard = () => {
         </Tabs>
       </Box>
       <Paper sx={contentContainerStyle}>
-        <Grid container sx={{ display: tabIndex === 0 ? "flex" : "none" }}>
+        <Grid container sx={tabIndex === 0 ? visibleTabStyle : hiddenTabStyle}>
           <Swap />
         </Grid>
-        <Grid container sx={{ display: tabIndex === 1 ? "flex" : "none" }}>
+        <Grid container sx={tabIndex === 1 ? visibleTabStyle : hiddenTabStyle}>
           <Pool />
         </Grid>
       </Paper>

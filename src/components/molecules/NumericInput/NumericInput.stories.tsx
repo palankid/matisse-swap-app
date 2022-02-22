@@ -12,10 +12,8 @@ export default {
 const Template: ComponentStory<typeof NumericInput> = (args) => {
   const [value, setValue] = useState<number>(0);
 
-  const handleChange = (
-    event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
-  ) => {
-    setValue(+event.target.value);
+  const handleChange = (value: number) => {
+    setValue(value);
   };
 
   return (

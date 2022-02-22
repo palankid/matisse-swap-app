@@ -1,16 +1,23 @@
 {
   "allowed slippage": "Allowed Slippage",
+  "amount": "Amount",
   "connect wallet": "Connect wallet",
   "connect your wallet": "Connect your wallet",
   "disconnected text": "To start using the app, your wallet needs to be connected :)",
   "choose amount text": "Choose the amount you want to swap on your balance. You can check it on the top of the amount field that you want to swap :D",
   "choose token text": "You can choose any token on the list, if there is some missing you can try adding it by the <strong>contract address.</strong>",
+  "exchange rates": "1 {{token1}} = {{rate}} {{token2}}",
+  "from": "From",
   "hint": "Hint",
+  "invalid token amount": "Minimun amount for conversion is 0.1 or value is out of range(0-100)",
   "liquidity provider fee": "Liquidity Provider Fee",
+  "max funds hint": "Max to use all your funds",
   "minimum received": "Minimum Received",
   "price impact": "Price Impact",
   "select start swapping": "Select a token to start swapping",
   "swap": "Swap",
+  "to": "To",
+  "token balance": "Balance 1 ETH",
   "transaction details": "Transaction details",
   "transaction details hint": "Output is estimated. you will receive at least <strong>99.95 AVAX</strong> or the transaction will revert."
 }

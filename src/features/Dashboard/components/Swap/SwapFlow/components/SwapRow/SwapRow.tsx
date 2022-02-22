@@ -1,45 +1,71 @@
-import React from "react";
-import {
-  Box,
-  MenuItem,
-  Select,
-  SxProps,
-  Theme,
-  Typography,
-} from "@mui/material";
+import React, { ReactNode } from "react";
+import { Box, SelectChangeEvent, SxProps, Theme } from "@mui/material";
 
-import {
-  AvalancheIcon,
-  EthereumIcon,
-  PolygonIcon,
-} from "components/atoms/Icons/Icons";
-
-import {
-  containerStyle,
-  inputStyle,
-  dropdownStyle,
-  dropdownItemStyle,
-} from "./SwapRow.styles";
+import { containerStyle, inputStyle, dropdownStyle } from "./SwapRow.styles";
 import NumericInput from "components/molecules/NumericInput";
-import Dropdown from "components/atoms/Dropdown";
 import TokenDropdown from "components/molecules/TokenDropdown";
+import { TokenPropsType } from "features/Dashboard/store/dashboard.types";
 
 interface SwapRowType {
+  selection: TokenPropsType;
+  dropdownTitle: string;
+  inputTitle: string;
+  secondaryTitle?: string;
+  helperText?: string;
+  errorText?: string;
+  connected?: boolean;
   sx?: SxProps<Theme>;
+  onTokenChange: (token: string) => void;
+  onValueChange: (value: number) => void;
 }
 
-const SwapRow = ({ sx }: SwapRowType) => {
+const SwapRow = ({
+  selection,
+  dropdownTitle,
+  inputTitle,
+  secondaryTitle,
+  helperText,
+  errorText,
+  connected = false,
+  sx,
+  onTokenChange,
+  onValueChange,
+}: SwapRowType) => {
+  const computedHelperText = selection.validation.value
+    ? helperText
+    : errorText;
+
+  const handleTokenChange = (
+    event: SelectChangeEvent<unknown>,
+    child: ReactNode
+  ) => {
+    onTokenChange(event.target.value as string);
+  };
+
+  const handleValueChange = (value: number) => {
+    onValueChange(value);
+  };
+
   return (
     <Box sx={{ ...containerStyle, ...sx }}>
-      <TokenDropdown sx={dropdownStyle} value="" />
+      <TokenDropdown
+        sx={dropdownStyle}
+        value={selection.token}
+        title={dropdownTitle}
+        onChange={handleTokenChange}
+      />
       <NumericInput
         sx={inputStyle}
         min={0}
         max={100}
-        step={0.01}
-        title="Amount"
-        secondaryTitle="Balance 1 ETH"
-        helperText="Max to use all your funds"
+        step={0.1}
+        value={selection.value}
+        title={inputTitle}
+        secondaryTitle={secondaryTitle}
+        helperText={computedHelperText}
+        error={!selection.validation.value}
+        disabled={!connected}
+        onChange={handleValueChange}
       />
     </Box>
   );

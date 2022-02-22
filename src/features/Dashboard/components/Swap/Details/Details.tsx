@@ -7,6 +7,12 @@ import SidePanel, {
   TransactionStatus,
 } from "components/molecules/SidePanel";
 import useConnect from "hooks/useConnect";
+import { useSelector } from "react-redux";
+import {
+  areAllTokenPropsValid,
+  areTokenSelectionsValid,
+  areTokenValuesValid,
+} from "features/Dashboard/store/dashboard.selectors";
 
 const dataProvider = [
   {
@@ -30,31 +36,32 @@ const dataProvider = [
 const Details = () => {
   const { t } = useTranslation();
   const { connectedStatus, handleConnectClick } = useConnect();
-
-  const setupComplete = true;
+  const tokenSelectionsValid = useSelector(areTokenSelectionsValid);
+  const tokenValuesValid = useSelector(areTokenValuesValid);
+  const allTokenPropsValid = useSelector(areAllTokenPropsValid);
 
   const title = {
-    [+connectedStatus]: t("hint"),
-    [+setupComplete]: t("transaction details"),
+    [+allTokenPropsValid]: t("transaction details"),
+    [+(!tokenSelectionsValid || !tokenValuesValid)]: t("hint"),
     [+!connectedStatus]: t("connect your wallet"),
   }[1];
 
   const textKey = {
-    [+connectedStatus && 0]: "choose amount text",
-    [+connectedStatus]: "choose token text",
+    [1]: "",
+    [+!tokenValuesValid]: "choose amount text",
+    [+!tokenSelectionsValid]: "choose token text",
     [+!connectedStatus]: "disconnected text",
   }[1];
 
   return (
     <SidePanel title={title}>
-      {!setupComplete && (
+      {!allTokenPropsValid || !connectedStatus ? (
         <PanelInfo
           textOrKey={textKey}
           showLink={!connectedStatus}
           onLinkClick={handleConnectClick}
         />
-      )}
-      {setupComplete && (
+      ) : (
         <TransactionStatus
           data={dataProvider}
           detailsHintKey="transaction details hint"

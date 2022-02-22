@@ -19,16 +19,17 @@ import {
 import Typography from "../Typography";
 
 export interface DropdownType extends Omit<SelectProps, "variant" | "label"> {
+  title?: string;
   children: React.ReactNode;
   sx?: SxProps<Theme>;
 }
 
-const Dropdown = ({ sx = [], children, ...props }: DropdownType) => {
+const Dropdown = ({ title, sx = [], children, ...props }: DropdownType) => {
   return (
     <FormControl variant="standard" sx={sx}>
       <Grid display="flex" sx={upperLabelsStyle}>
         <FormHelperText>
-          <Typography variant="helpertext">Hello world</Typography>
+          <Typography variant="helpertext">{title}</Typography>
         </FormHelperText>
       </Grid>
       <Select

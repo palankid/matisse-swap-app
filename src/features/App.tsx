@@ -3,6 +3,7 @@ import { Container } from "@mui/material";
 
 import Header from "./Header";
 import Dashboard from "./Dashboard";
+import StickyFooter from "./StickyFooter";
 
 import { backgroundStyle, backgroundCoverStyle } from "./App.styles";
 
@@ -12,6 +13,7 @@ const App = () => {
       <Container maxWidth={false} sx={backgroundCoverStyle} />
       <Header />
       <Dashboard />
+      <StickyFooter />
     </Container>
   );
 };
