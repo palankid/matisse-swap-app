@@ -5,7 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import "../src/locales/i18n";
 
 import theme from "../src/theme/theme";
-import GlobalFonts from "../src/theme/fonts";
+import { CssBaseline } from "@mui/material";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -20,7 +20,7 @@ export const parameters = {
 export const decorators = [
   (Story, context) => (
     <ThemeProvider theme={theme}>
-      <GlobalFonts />
+      <CssBaseline />
       <Story {...context} />
     </ThemeProvider>
   ),

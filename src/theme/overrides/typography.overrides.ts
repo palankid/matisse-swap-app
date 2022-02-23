@@ -43,10 +43,9 @@ declare module "@mui/material/Typography" {
 }
 
 const createTypograpghyOverrides = (defaultTheme: Theme) => ({
-  fontFamily: "Konnect, sans-serif",
   hero: {
     fontWeight: 400,
-    fontFamily: "Taviraj",
+    fontFamily: "Taviraj, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "6rem",
@@ -59,7 +58,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h1: {
     fontWeight: 400,
-    fontFamily: "Taviraj",
+    fontFamily: "Taviraj, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "4.5rem",
@@ -72,7 +71,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h2: {
     fontWeight: 400,
-    fontFamily: "Taviraj",
+    fontFamily: "Taviraj, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "4rem",
@@ -85,7 +84,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h3: {
     fontWeight: 400,
-    fontFamily: "Taviraj",
+    fontFamily: "Taviraj, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "3rem",
@@ -98,7 +97,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h4: {
     fontWeight: 400,
-    fontFamily: "Taviraj",
+    fontFamily: "Taviraj, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "2rem",
@@ -111,7 +110,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h5: {
     fontWeight: 400,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.5rem",
@@ -124,7 +123,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   h6: {
     fontWeight: 400,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.25rem",
@@ -137,7 +136,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   subtitle1: {
     fontWeight: 400,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_BLACK,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.125rem",
@@ -151,7 +150,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   subtitle2: undefined,
   body1: {
     fontWeight: 400,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.125rem",
@@ -164,7 +163,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   body2: {
     fontWeight: 400,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1rem",
@@ -177,7 +176,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   body1bold: {
     fontWeight: 500,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.125rem",
@@ -190,7 +189,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   body2bold: {
     fontWeight: 500,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1rem",
@@ -203,7 +202,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   buttonlarge: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.125rem",
       lineHeight: "140%",
@@ -215,7 +214,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   buttonmedium: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1rem",
       lineHeight: "140%",
@@ -227,7 +226,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   buttonsmall: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "0.875rem",
       lineHeight: "140%",
@@ -239,7 +238,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   caption: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "0.75rem",
@@ -252,7 +251,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   inputlabel: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "0.875rem",
@@ -265,7 +264,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   helpertext: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "0.875rem",
@@ -278,7 +277,7 @@ const createTypograpghyOverrides = (defaultTheme: Theme) => ({
   },
   inputtext: {
     fontWeight: 300,
-    fontFamily: "Konnect",
+    fontFamily: "Konnect, sans-serif",
     color: colors.COLOR_DARK_ASH,
     [defaultTheme.breakpoints.down("sm")]: {
       fontSize: "1.125rem",

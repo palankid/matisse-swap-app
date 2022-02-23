@@ -6,6 +6,7 @@ import createTypograpghyOverrides from "./overrides/typography.overrides";
 import createTabsOverrides from "./overrides/tabs.overrides";
 import createIconButtonOverrides from "./overrides/iconButton.overrides";
 import createLinkOverrides from "./overrides/link.overrides";
+import cssOverrides from "./overrides/css.overrides";
 
 const defaultTheme = createTheme();
 
@@ -20,6 +21,7 @@ const theme = createTheme({
   },
   typography: createTypograpghyOverrides(defaultTheme),
   components: {
+    ...cssOverrides,
     ...createLinkOverrides(),
     ...createIconButtonOverrides(defaultTheme),
     ...createTabsOverrides(defaultTheme),

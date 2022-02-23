@@ -6,7 +6,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 
 import theme from "theme/theme";
-import GlobalFonts from "theme/fonts";
 import createEmotionCache from "theme/createEmotionCache";
 
 import "locales/i18n";
@@ -25,7 +24,6 @@ export default function MyApp(props: MyAppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <GlobalFonts />
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />

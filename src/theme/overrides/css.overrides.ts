@@ -1,6 +1,3 @@
-import React from "react";
-import { Global, css } from "@emotion/core";
-
 const fontWeights = [
   "Hairline",
   "Thin",
@@ -47,14 +44,14 @@ const fonts = fontWeights.reduce(
 `
 );
 
-const GlobalFonts = () => {
-  return (
-    <Global
-      styles={css`
-        ${fonts}
-      `}
-    />
-  );
-};
+export default {
+  MuiCssBaseline: {
+    styleOverrides: `
+      ${fonts}
 
-export default GlobalFonts;
+      :root {
+        fontFamily: "Konnect, sans-serif",
+      }
+    }`,
+  },
+};
