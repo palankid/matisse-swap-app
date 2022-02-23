@@ -8,8 +8,9 @@ const useMediaQuery = () => {
   const isMd = useMuiMediaQuery(theme.breakpoints.up("md"));
   const isLg = useMuiMediaQuery(theme.breakpoints.up("lg"));
   const isXl = useMuiMediaQuery(theme.breakpoints.up("xl"));
+  const isMaxSm = useMuiMediaQuery(theme.breakpoints.down("sm"));
 
-  return { isXs, isSm, isMd, isLg, isXl };
+  return { isXs, isSm, isMd, isLg, isXl, isMaxSm };
 };
 
 export default useMediaQuery;

@@ -33,8 +33,8 @@ const SwapFlow = () => {
   const toSelection = useSelector(getToTokenProps);
   const allTokenPropsValid = useSelector(areAllTokenPropsValid);
   const interpolationValues = {
-    token1: fromSelection.token.toUpperCase(),
-    token2: toSelection.token.toUpperCase(),
+    token1: fromSelection.token,
+    token2: toSelection.token,
     rate: 0.00127451,
   };
   const toFieldHelperText =

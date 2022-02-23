@@ -1,7 +1,13 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { AvalancheIcon, EthereumIcon, PolygonIcon, SwapIcon } from "./Icons";
+import {
+  AvalancheIcon,
+  CloseIcon,
+  EthereumIcon,
+  PolygonIcon,
+  SwapIcon,
+} from "./Icons";
 import { Grid } from "@mui/material";
 
 export default {
@@ -29,6 +35,9 @@ const Template: ComponentStory<typeof React.Component> = (args) => {
       </Grid>
       <Grid item>
         <PolygonIcon />
+      </Grid>
+      <Grid item>
+        <CloseIcon />
       </Grid>
     </Grid>
   );

@@ -15,13 +15,22 @@ export default {
 const Template: ComponentStory<typeof IconButton> = (args) => {
   return (
     <Grid container gap={2}>
-      <IconButton size="large">
+      <IconButton size="large" color="primary">
         <PowerSettingsNewIcon />
       </IconButton>
-      <IconButton size="large">
+      <IconButton size="large" color="primary">
         <SwapIcon />
       </IconButton>
-      <IconButton size="large" disabled>
+      <IconButton size="large" color="primary" disabled>
+        <SwapIcon />
+      </IconButton>
+      <IconButton size="large" color="secondary">
+        <PowerSettingsNewIcon />
+      </IconButton>
+      <IconButton size="large" color="secondary">
+        <SwapIcon />
+      </IconButton>
+      <IconButton size="large" color="secondary" disabled>
         <SwapIcon />
       </IconButton>
     </Grid>

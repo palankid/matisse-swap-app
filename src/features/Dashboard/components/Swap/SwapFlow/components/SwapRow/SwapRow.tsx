@@ -35,11 +35,8 @@ const SwapRow = ({
     ? helperText
     : errorText;
 
-  const handleTokenChange = (
-    event: SelectChangeEvent<unknown>,
-    child: ReactNode
-  ) => {
-    onTokenChange(event.target.value as string);
+  const handleTokenChange = (value: string | number) => {
+    onTokenChange(value as string);
   };
 
   const handleValueChange = (value: number) => {

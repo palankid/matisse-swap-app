@@ -5,6 +5,7 @@ import SwapIconSvg from "assets/icons/swap.svg";
 import AvalancheIconSvg from "assets/icons/avalanche.svg";
 import EthereumIconSvg from "assets/icons/ethereum.svg";
 import PolygonIconSvg from "assets/icons/polygon.svg";
+import MuiCloseIcon from "@mui/icons-material/Close";
 
 export const SwapIcon = ({ ...props }) => (
   <SvgIcon {...props}>
@@ -27,5 +28,11 @@ export const EthereumIcon = ({ ...props }) => (
 export const PolygonIcon = ({ ...props }) => (
   <SvgIcon {...props}>
     <PolygonIconSvg />
+  </SvgIcon>
+);
+
+export const CloseIcon = ({ ...props }) => (
+  <SvgIcon {...props}>
+    <MuiCloseIcon />
   </SvgIcon>
 );

@@ -1,5 +1,5 @@
 export enum Tokens {
-  eth = "eth",
-  matic = "matic",
-  avax = "avax",
+  eth = "ETH",
+  matic = "Matic",
+  avax = "AVAX",
 }
